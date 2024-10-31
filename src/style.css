@@ -1,0 +1,25 @@
+current-time {
+    border-radius: 0.5rem; 
+    background-color: #EEBDFF; 
+    padding: 4rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 40rem;
+    font-size: 2rem;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+current-time p{
+    font-weight: bold;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
