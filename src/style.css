@@ -1,3 +1,13 @@
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+/* CURRENT TIME */
+
 current-time {
     border-radius: 0.5rem; 
     background-color: #EEBDFF; 
@@ -13,13 +23,18 @@ current-time {
     flex-direction: column;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 current-time p{
     font-weight: bold;
 }
-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
+current-time time{
+    font-weight: bold;
 }
+
+/* SCREEN SIZE */
+screen-size{
+    position: absolute;
+    top: 1rem; 
+    right: 0.5rem;
+}
+

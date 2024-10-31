@@ -1,16 +1,16 @@
 class CurrentTime extends HTMLElement{
     static observedAttributes = ["format"];
     connectedCallback() {
-        console.log("début");
+        console.log("début currentime");
         this.render();
         this.intervalID = setInterval(() => this.updateTime(), 1000);
     }
     disconnectedCallback() {
         clearInterval(this.intervalID);
-        console.log("fin");
+        console.log("fin currentime");
     }
     render() {
-        this.innerHTML = `
+        this.innerHTML = /*HTML */ `
             <p class="currentTime__title"></p>
             <time class="currentTime__time"></time>
         `;
