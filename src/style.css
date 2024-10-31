@@ -6,29 +6,57 @@ section{
     
 }
 
-/* CURRENT TIME */
-
 current-time {
-    border-radius: 0.5rem; 
-    background-color: #EEBDFF; 
-    padding: 4rem; 
+    border-radius: 1rem; /* Augmente le rayon pour un aspect plus ludique */
+    background-color: #FFB6C1; /* Une couleur pastel amusante */
+    padding: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 2rem;
     width: 40rem;
-    font-size: 2rem;
+    font-size: 2.5rem; /* Augmente légèrement la taille de la police */
     flex-direction: column;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Une police fantaisiste pour un effet goofy */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet 3D */
+    transition: transform 0.3s ease; /* Transition pour l'animation au survol */
 }
 
-current-time p{
-    font-weight: bold;
+current-time:hover {
+    transform: scale(1.05); /* Agrandit l'élément au survol pour un effet dynamique */
 }
-current-time time{
+
+current-time p {
     font-weight: bold;
+    color: #FF6347; /* Une couleur rouge pour le texte */
+}
+
+current-time time {
+    font-weight: bold;
+    color: #4B0082; /* Une couleur sombre pour contraster avec le fond */
+    text-shadow: 2px 2px #FF4500; /* Ombre portée pour un effet de profondeur */
+}
+
+/* Effets supplémentaires pour Halloween */
+current-time::before {
+    content: "🎃"; /* Icône de citrouille */
+    font-size: 4rem; /* Taille de l'icône */
+    position: absolute; /* Positionne l'icône */
+    top: 10px; /* Ajustez pour la position souhaitée */
+    left: 10px; /* Ajustez pour la position souhaitée */
+    animation: bounce 1s infinite; /* Animation de rebond pour l'icône */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
 }
 
 /* SCREEN SIZE */
