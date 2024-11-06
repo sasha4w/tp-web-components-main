@@ -66,3 +66,19 @@ screen-size{
     right: 0.5rem;
 }
 
+/* CUSTOM DETAILS */
+custom-details{
+    border-radius: 1rem; /* Augmente le rayon pour un aspect plus ludique */
+    background-color: #FFB6C1; /* Une couleur pastel amusante */
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    width: 40rem;
+    font-size: 2.5rem; /* Augmente légèrement la taille de la police */
+    flex-direction: column;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Une police fantaisiste pour un effet goofy */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet 3D */
+    transition: transform 0.3s ease; /* Transition pour l'animation au survol */
+}
